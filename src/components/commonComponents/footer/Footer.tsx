@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/logo.jpeg';
+import logo from '../../../assets/iIra_images/iira_stay.jpg';
 import {
     FaFacebook, FaTwitter, FaYoutube, FaInstagram
 } from 'react-icons/fa';
@@ -28,7 +28,8 @@ const Footer = () => {
             <div className='max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {/* Logo Section */}
                 <div className='flex flex-col gap-7 items-center lg:items-center'>
-                    <img className='w-24 rounded-md' src={logo} alt="paymentlogo" />
+                    <h3 className='text-3xl'>Aquaa Homes </h3>
+                    {/* <img className='w-24 rounded-md' src={logo} alt="paymentlogo" /> */}
                     <div className='flex text-lg gap-6'>
                         {footerData.socialLinks.map(({ icon, link }, index) => {
                             const IconComponent = iconMap[icon];
@@ -91,7 +92,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className='text-base text-slate-300 text-center mt-10'>
-                © 2025 The Cloudnine All rights reserved | Designed By RateBotAi
+                © {new Date().getFullYear()} The iIra Stays - Ocean Bliss All rights reserved | Designed By RateBotAi
             </div>
         </div>
     );

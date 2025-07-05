@@ -18,7 +18,7 @@ interface Property {
 interface PropertyModalProps {
     property: Property | null; // Property can be null if not selected
     onClose: () => void; // onClose is a function that closes the modal
-    handleNavigate: (property: any) => void; // handleNavigate is a function that navigates to the property detail page
+    handleNavigate: (id: any) => void; // handleNavigate is a function that navigates to the property detail page
 }
 
 const PropertyModal: React.FC<PropertyModalProps> = ({ property, onClose, handleNavigate }) => {
@@ -81,7 +81,7 @@ const PropertyModal: React.FC<PropertyModalProps> = ({ property, onClose, handle
                             </ul>
                         </div>
                         {/* redirecting button (redirecting to the property  detail page ) */}
-                        <button onClick={() => handleNavigate(property)} className="bg-primary text-white rounded-md px-4 py-2 mt-4">View Details</button>
+                        <button onClick={() => handleNavigate(property.id)} className="bg-primary text-white rounded-md px-4 py-2 mt-4">View Details</button>
                     </div>
 
                 </div>

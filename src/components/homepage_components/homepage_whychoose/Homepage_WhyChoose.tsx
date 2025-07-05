@@ -1,5 +1,5 @@
-import img1 from '../../../assets/shrikar_images/shikar_b3.jpg';
-import img2 from '../../../assets/HomePage_banner3.jpg';
+import img1 from '../../../assets/aquaa_images/image_9.jpg';
+import img2 from '../../../assets/aquaa_images/image_3.jpg';
 import { MdOutlineDone } from 'react-icons/md';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
@@ -14,17 +14,18 @@ interface FeatureData {
 const Homepage_WhyChoose = () => {
     const featureData: FeatureData = {
         images: [img1, img2],
-        title: "Why Choose Hotel Cloudnine?",
-        description: "Gain luxury and comfort at Hotel Cloudnine, perfect for relaxation, celebration, or adventure.",
+        title: "Why Choose Aquaa Homes?",
+        description: "Discover comfort and tranquility at Aquaa Homes, your ideal retreat located at L2,3, Jabo Majra Road, near PKR Jain Vatika School. Perfect for relaxation, gatherings, or simply escaping the city bustle.",
         features: [
-            "Quick getaways near Hotel Cloudnine.",
-            "Ideal majestic villas for any occasion.",
-            "Enjoy exquisite cuisine by top foods.",
-            "Perfect for creatives and adventurers.",
-            "Tailored experiences for all visitors.",
-            "Relax, celebrate, or create memories."
+            "Peaceful villa stay in a serene neighborhood.",
+            "Modern design blending comfort and style.",
+            "Close to local amenities and schools.",
+            "Ideal for families, couples, and small groups.",
+            "Personalized hospitality for a memorable stay.",
+            "Your home away from home with privacy and warmth."
         ]
     };
+
 
     return (
         <section className="py-10 lg:py-20">
@@ -67,8 +68,8 @@ const Homepage_WhyChoose = () => {
                     </ul>
 
                     <div className="flex justify-center lg:justify-start">
-                        <Link 
-                            to={'/contact'} 
+                        <Link
+                            to={'/contact'}
                             className="bg-primary text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 transition-colors hover:bg-primary-dark"
                         >
                             <span>Contact</span>

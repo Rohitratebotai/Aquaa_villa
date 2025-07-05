@@ -41,8 +41,8 @@ const Homepage_Properties = () => {
         setSelectedProperty(null);
     };
 
-    const handleNavigate = (property: any) => {
-        navigate(`/property_details/${property?.id}`, { state: { property } })
+    const handleNavigate = (id: any) => {
+        navigate(`/property_details/${id}`)
     }
 
     const handleModal = (property: any) => () => {
@@ -55,12 +55,13 @@ const Homepage_Properties = () => {
         <>
             <section className="px-4 lg:px-20 py-8 pb-10 md:pb-20">
                 <Heading title='Explore Our Villas' />
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 md:gap-6 lg:gap-10'>
                     {propertyData.map((property: any) => (
                         <div key={property.id} className="bg-white shadow-xl rounded-md overflow-hidden">
                             {/* Image Container */}
                             <div
-                                className="relative h-[40vh] md:h-[50vh]"
+                                // className="relative h-[40vh] md:h-[50vh]"
+                                className="relative h-[40vh] md:h-[80vh]"
                             >
                                 <Swiper
                                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -79,7 +80,7 @@ const Homepage_Properties = () => {
                                     {property?.property_img.map((image: any, index: number) => (
                                         <SwiperSlide key={index}>
                                             <div
-                                                onClick={() => handleNavigate(property)}
+                                                onClick={() => handleNavigate(property.id)}
                                                 className="h-full w-full"
                                             >
                                                 <img
@@ -115,7 +116,12 @@ const Homepage_Properties = () => {
                                                 {renderIcon(amenity.amenities_icon)}
                                             </span>
                                             <span className="text-sm text-gray-600">
-                                                {amenity.amenities_type}
+                                                {/* {{ amenity.amenities_count } ? { amenity.amenities_count } : { amenity.amenities_name }} */}
+                                                {
+                                                    amenity.amenities_count
+                                                        ? ` ${amenity.amenities_count}`
+                                                        : ` ${amenity.amenities_availablity}`
+                                                }
                                             </span>
                                         </div>
                                     ))}

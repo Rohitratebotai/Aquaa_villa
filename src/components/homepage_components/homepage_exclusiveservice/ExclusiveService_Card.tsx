@@ -1,7 +1,7 @@
-import img1 from '../../../assets/shrikar_images/shikar_b3.jpg'
-import img4 from '../../../assets/shrikar_images/shikar_b1.jpg'
-import img2 from '../../../assets/samundra_images/samundra_b1.jpg'
-import img3 from '../../../assets/casa_images/casa_b2.jpg'
+import img1 from '../../../assets/aquaa_images/image_14.jpg'
+import img4 from '../../../assets/aquaa_images/image_19.jpg'
+import img2 from '../../../assets/aquaa_images/image_5.jpg'
+import img3 from '../../../assets/aquaa_images/image_34.jpg'
 
 interface Room {
     title: string,
@@ -13,24 +13,24 @@ const ExclusiveService_Card = () => {
     //  Card Data 
     const data: Room[] = [
         {
-            title: "Your Paradise Awaits",
+            title: "Your Peaceful Escape",
             thumbnail: img1,
-            description: "Escape to a tranquil haven where luxury meets serenity, offering the ultimate retreat from everyday life."
+            description: "Retreat to a serene sanctuary where comfort and calm come together — the perfect getaway from the everyday."
         },
         {
-            title: "A Home for Every Heart",
+            title: "Where Every Stay Feels Like Home",
             thumbnail: img2,
-            description: "Discover a place that feels like home, designed to suit every style, story, and dream."
+            description: "Thoughtfully designed to reflect warmth and personality, our space welcomes every story, style, and soul."
         },
         {
-            title: "Sip, Relax, Repeat. ",
+            title: "Brew. Unwind. Repeat.",
             thumbnail: img3,
-            description: "Start your day with the perfect brew, because great coffee fuels great moments."
+            description: "Begin your mornings with a fresh brew in hand and peace in the air — because great days start with great coffee."
         },
         {
-            title: "Celebrations That Last a Lifetime. ",
+            title: "Celebrate Moments That Matter",
             thumbnail: img4,
-            description: "Create unforgettable memories with events tailored to make your special day truly extraordinary."
+            description: "From intimate gatherings to special milestones, create lasting memories in a setting made for joy and togetherness."
         },
     ];
 
@@ -43,7 +43,7 @@ const ExclusiveService_Card = () => {
                         return (
                             <div
                                 key={item.title}
-                                className="group relative h-[50vh] md:h-[65vh] w-full mb-3  rounded-lg overflow-hidden"
+                                className="group relative h-[50vh] md:h-[72vh] w-full mb-3  rounded-lg overflow-hidden"
                             >
                                 <img
                                     className="object-cover h-4/6 w-full  rounded-lg "

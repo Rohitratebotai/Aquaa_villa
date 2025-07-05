@@ -19,26 +19,34 @@ const Navbar = () => {
         setIsVillasDropdownOpen(false);
     };
 
-    const handleNavigate = (property: any) => {
+    const handleNavigate = (property) => {
         navigate(`/property_details/${property.id}`, { state: { property } });
         closeMenu()
     };
+
+    const bookingURL = '#';
 
     useEffect(() => {
         const onLoadfunction = () => {
             const navbar = document.getElementById('navbar_container');
             const navlinks = document.getElementById('navlinks');
+            // const bookingBtn = document.getElementById('bookingBtn');
+
             if (navbar && navlinks) {
                 if (window.scrollY > 20) {
                     navbar.classList.add('bg-black', 'border-b-1', 'border-bg-primary');
-                    navbar.classList.remove('bg-transparent', 'border-transparent');
+                    navbar.classList.remove('bg-white', 'border-transparent');
                     navlinks.classList.add('text-white');
                     navlinks.classList.remove('text-black');
+                    // bookingBtn.classList.add('bg-white', 'text-black');
+                    // bookingBtn.classList.remove('bg-primary', 'text-white');
                 } else {
-                    navbar.classList.add('bg-transparent', 'border-transparent');
+                    navbar.classList.add('bg-white', 'border-transparent');
                     navbar.classList.remove('bg-black', 'border-b-1', 'border-bg-primary');
                     navlinks.classList.add('text-black');
                     navlinks.classList.remove('text-white');
+                    // bookingBtn.classList.add('bg-primary', 'text-white');
+                    // bookingBtn.classList.remove('bg-white', 'text-black');
                 }
             }
         };
@@ -57,23 +65,44 @@ const Navbar = () => {
             <div className='flex justify-center bg-Bg_secondary items-center gap-4 p-4'>
                 <div className='flex items-center gap-2 font-semibold md:font-medium'>
                     <IoIosMail className='text-base md:text-2xl' />
-                    <span className='text-sm md:text-xl'>info@hotelscloudnine.com</span>
+                    <a
+                    href='mailto:aqaavilla@gmail.com'
+                    className='text-sm md:text-xl hover:underline'
+                >
+                    aqaavilla@gmail.com
+                </a>
                 </div>
                 <span className='text-slate-400 text-xl'>|</span>
                 <div className='flex items-center gap-2 font-semibold md:font-medium'>
                     <IoIosCall className='text-base md:text-xl' />
-                    <span className='text-sm md:text-xl'>7065890277</span>
+                    <a
+                    href='tel:8199996777'
+                    className='text-sm md:text-xl hover:underline'
+                >
+                    8199996777
+                </a>
+                </div>
+                <span className='text-slate-400 text-xl'>|</span>
+                <div className='flex items-center gap-2 font-semibold md:font-medium'>
+                    <IoIosCall className='text-base md:text-xl' />
+                    <a
+                    href='tel:9813061164'
+                    className='text-sm md:text-xl hover:underline'
+                >
+                    9813061164
+                </a>
                 </div>
             </div>
             {/* Main Nav */}
-            <div id='navbar_container' className='bg-transparent transition-all duration-300 border-b border-transparent w-full h-full flex items-center justify-between px-4 py-3 md:px-12'>
+            <div id='navbar_container' className='bg-white transition-all duration-300 border-b border-transparent w-full h-full flex items-center justify-between px-4 py-3 md:px-12'>
                 {/* Menu Toggle Button (for mobile) */}
                 <button className='md:hidden text-primary text-2xl' onClick={toggleMenu}>
                     {isMenuOpen ? <HiX /> : <HiMenuAlt3 />}
                 </button>
                 {/* Logo */}
                 <Link to='/'>
-                    <img className='w-16 h-16 rounded-full' src={navbarData.logo[0].image} alt='Logo' />
+                    {/* <img className='w-16 h-16 rounded-full' src={navbarData.logo[0].image} alt='Logo' /> */}
+                    <h3 className='text-3xl'>Aqaa Villa</h3>
                 </Link>
                 {/* Nav Links (Desktop) */}
                 <div id='navlinks' className='hidden md:flex items-center gap-4 text-black md:gap-8'>
@@ -109,6 +138,13 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
+                    <button
+                        id='bookingBtn'
+                        onClick={() => window.open(bookingURL, '_blank')}
+                        className='bg-primary text-white px-4 py-2 rounded font-semibold hover:bg-opacity-90 transition text-sm md:text-base'
+                    >
+                        Book Now
+                    </button>
                 </div>
             </div>
 
@@ -148,6 +184,16 @@ const Navbar = () => {
                     </ul>
                 </div>
             )}
+            {/*Book Now Button for Mobile Only*/}
+            <button
+                onClick={() => {
+                    window.open(bookingURL, '_blank');
+                    closeMenu();
+                }}
+                className='fixed bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-full font-semibold shadow-lg hover:bg-opacity-90 transition md:hidden z-[999] animate-bounce'
+            >
+                Book Now
+            </button>
         </section>
     );
 };

@@ -23,36 +23,27 @@ const Homepage_Testimonial = () => {
 
     const data: reviews[] = [
         {
-            // icon: <SiReactivex />,
-            review: "Excellent services. Anybody who has stayed will not have any adverse remark. Stay, Food, Location (very close to beach) are Superb. Very neat and clean environment throughout the Resort",
-            clientName: 'Janardhanan Madhayam',
-            // thumbnail: img1
+            review: "Aquaa Homes offers a peaceful and calm environment, perfect for those seeking a quiet retreat. Conveniently located near Jabo Majra Road, it’s an ideal spot for exploring the local area.",
+            clientName: 'Shreya Ashtekar',
         },
         {
-            // icon: <SiReactivex />,
-            review: "We were 3 families and stayed here for 3 nights. Wonderful experience. Food taste is awesome. Rooms are well maintained and cleaned. Kaka and whole staff was very supportive. Location is just 5 mins to Aksi beach.",
-            clientName: 'Dhiraj Dighe',
-            // thumbnail: img2
+            review: "The villa is clean, comfortable, and well-maintained. The host was extremely helpful and ensured our stay was smooth and enjoyable. The location is great, close to local schools and shops.",
+            clientName: 'Raja PSV',
         },
         {
-            // icon: <SiReactivex />,
-            review: "Such a stunning place, it's super close to the beach (a pristine clean beach). We went during the off season when the staff too was on leave, and the owner himself was hosting us with rapt attention to our needs.",
-            clientName: 'Nirmiti Kamat',
-            // thumbnail: img3
+            review: "A lovely stay with pleasant weather and a tranquil atmosphere. The staff and owner were cooperative and attentive, making the experience even better.",
+            clientName: 'Dhara M',
         },
         {
-            // icon: <SiReactivex />,
-            review: "perfect getaway from daily routine, wonderful place, good service, also very hygienic and clean, hardly 5 min away from beach so its a perfect place.",
-            clientName: 'Leena Manjrekar',
-            // thumbnail: img1
+            review: "Best value stay in the area with a friendly host who helped arrange everything we needed. Highly recommended for budget-conscious travelers seeking comfort.",
+            clientName: 'Vaibhav Marathe',
         },
         {
-            // icon: <SiReactivex />,
-            review: "We had a 2 days stay at Samudra Darshan and have enjoyed the entire weekend. The Owner Mr Raut is a really nice person and helped us throughout.",
-            clientName: 'Sannah Nathanr',
-            // thumbnail: img1
+            review: "The villa was cozy and charming, equipped with all essentials for a relaxing getaway. A perfect place to unwind and recharge. Highly recommended!",
+            clientName: 'Nihal Thale',
         }
     ];
+
 
     return (
         <div className=''>

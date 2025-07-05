@@ -1,14 +1,15 @@
 import CommonBanner from "../../components/commonComponents/banner/CommonBanner"
-import img from '../../assets/HomePage_banner3.jpg'
 import Homepage_Properties from "../../components/homepage_components/homepage_Properties/Homepage_Properties";
+import img from '../../assets/iIra_images/image_29.jpg';
 
 const contactInfo = [
     {
         icon: "📍",
-        text: "Aashiyaanaa Villas, House No 118, opposite ZP school, Aapti Dhamandara, Lonavala, Maharashtra - 410106",
+        text: "L2,3, Jabo Majra Road, Near PKR Jain Vatika School sarangpur,  India",
     },
-    { icon: "📞", text: "+91-7065890277" },
-    { icon: "✉️", text: "info@hotelscloudnine.com" },
+    { icon: "📞", text: "+91-8199996777" },
+    { icon: "📞", text: "+91-9813061164" },
+    { icon: "✉️", text: "aqaavilla@gmail.com" },
 ];
 
 const ContactUs = () => {
@@ -23,9 +24,9 @@ const ContactUs = () => {
                 {/* Left Section */}
                 <div className="md:w-1/2 text-gray-600 text-lg leading-relaxed">
                     <span>
-                        Discover the epitome of comfort and elegance with CloudNine, a collection of three exquisite properties: Shikar Resort, Samundra Darshan, and Casa 3 BHK. Whether you're seeking a serene retreat in nature, breathtaking ocean views, or a luxurious private stay, we have the perfect destination for you.
+                        Discover the perfect blend of comfort and elegance at <strong>Aquaa Homes</strong>, located on <strong>L2,3, Jabo Majra Road, near PKR Jain Vatika School</strong>. Whether you're seeking a quiet getaway or a relaxing stay with your loved ones, our peaceful retreat offers a welcoming ambiance and modern amenities to make your experience truly memorable.
 
-                        Enjoy top-tier amenities, including ample parking, scenic views, well-furnished accommodations, high-speed WiFi, 24/7 security, and personalized services to make your stay truly unforgettable. Book now and experience the best in hospitality with CloudNine!
+                        Enjoy spacious accommodations, seamless Wi-Fi connectivity, 24/7 security, and personalized hospitality designed to elevate your stay. Escape the ordinary and book your experience at <strong>Aquaa Homes</strong> — where comfort meets care.
                     </span>
                 </div>
 

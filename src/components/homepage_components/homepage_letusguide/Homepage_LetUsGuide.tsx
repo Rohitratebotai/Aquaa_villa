@@ -17,7 +17,7 @@ const Homepage_LetUsGuide = () => {
                     {/* right section  */}
                     <div className="flex-1 flex flex-col gap-6 md:gap-14 text-Bg_Primary">
                         <span className="text-base md:text-xl font-light text-center md:text-left">
-                        Discover the charm of Alibaug, a coastal paradise known for its pristine beaches, lush greenery, and luxurious private villas.
+                            Discover the charm of Jabo Majra, a peaceful escape surrounded by greenery and calm, just minutes from city life. Aquaa Homes offers the perfect blend of privacy, comfort, and modern elegance in a serene residential setting.
                         </span>
                         <span className="text-center md:text-left">
                             <Link to={'/contact'} className="px-6 py-3 bg-primary text-lg md:text-xl rounded-2xl inline-block">

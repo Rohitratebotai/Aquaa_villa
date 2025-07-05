@@ -6,7 +6,7 @@ import Homepage_Properties from "../../components/homepage_components/homepage_P
 import Homepage_Testimonial from "../../components/homepage_components/homepage_testimonial/Homepage_Testimonial"
 import Homepage_WhyChoose from "../../components/homepage_components/homepage_whychoose/Homepage_WhyChoose"
 import Slider from "../../components/homepage_components/slider/Slider"
-import img from '../../assets/parallax_img.jpg'
+import img from '../../assets/aquaa_images/image_14.jpg'
 
 const Home = () => {
     // Slider Images 
@@ -19,7 +19,8 @@ const Home = () => {
                 <Homepage_Properties />
             </div>
             <div>
-                <Parallax image={img} title={'Experience Luxury Across Three Stunning Properties'} description={'When you think of taking a holiday - what comes to mind? You taken far away, from the daily hustle and bustle of life! Close your eyes and imagine what that would be like. At Samudra Darshan we offer you a patch of holiday heaven right here on earth. Located just off the coast and within two minutes walk of Akshi Beach come experience the class, the luxury and the scenic beauty of Akshi beach.'} />
+                <Parallax image={img} title={'Discover Unmatched Elegance in Our Exclusive Property'} 
+                description = {'Imagine stepping away from the chaos of daily life into a calm, thoughtfully designed space where comfort meets quiet. At Aquaa Homes, we bring you a refreshing getaway experience in the heart of nature.'} />
             </div>
             <div className=" px-4 lg:px-20 ">
                 <Amenities />
