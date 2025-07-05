@@ -19,7 +19,7 @@ const Navbar = () => {
         setIsVillasDropdownOpen(false);
     };
 
-    const handleNavigate = (property) => {
+    const handleNavigate = (property:any) => {
         navigate(`/property_details/${property.id}`, { state: { property } });
         closeMenu()
     };

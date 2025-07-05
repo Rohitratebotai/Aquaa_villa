@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/iIra_images/iira_stay.jpg';
+// import logo from '../../../assets/iIra_images/iira_stay.jpg';
 import {
     FaFacebook, FaTwitter, FaYoutube, FaInstagram
 } from 'react-icons/fa';
